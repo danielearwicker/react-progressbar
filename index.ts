@@ -85,5 +85,5 @@ class ProgressBar extends TypedReact.Component<ProgressBarProps, ProgressBarStat
     }
 }
 
-export var reactClass = TypedReact.createClass(ProgressBar);
-export var factory = React.createFactory(reactClass);
+var cls = TypedReact.createClass(ProgressBar);
+export = cls;

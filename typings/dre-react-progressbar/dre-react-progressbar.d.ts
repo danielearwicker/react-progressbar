@@ -2,6 +2,6 @@
 ///<reference path="dre-react-progressbar-props.d.ts"/>
 
 declare module "dre-react-progressbar" {
-    export var reactClass: React.ComponentClass<DRE.ReactProgressBarProps>;
-    export var factory: React.ComponentFactory<DRE.ReactProgressBarProps>;
+    var _m: React.ComponentClass<DRE.ReactProgressBarProps>;
+    export = _m;
 }
