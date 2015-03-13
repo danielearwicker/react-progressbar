@@ -3,6 +3,6 @@
 
 declare module "dre-react-progressbar" {
     import React = require("react");
-    var _m: React.Component<DRE.ReactProgressBarProps, { __YoureDoingItWrong: string }>;
+    var _m: React.ComponentClass<DRE.ReactProgressBarProps>;
     export = _m;
 }

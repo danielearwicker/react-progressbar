@@ -19,14 +19,12 @@ var div = React.DOM.div;
 
 class ProgressBar extends React.Component<ProgressBarProps, ProgressBarState> {
 
-    getInitialState(): ProgressBarState {
-        return {
-            from: 0,
-            to: this.props.complete || 0,
-            elapsed: 1,
-            interpolated: this.props.complete || 0
-        };
-    }
+    state: ProgressBarState = {
+        from: 0,
+        to: this.props.complete || 0,
+        elapsed: 1,
+        interpolated: this.props.complete || 0
+    };
 
     componentWillReceiveProps(props: ProgressBarProps) {
         this.setState({
@@ -83,5 +81,7 @@ class ProgressBar extends React.Component<ProgressBarProps, ProgressBarState> {
         );
     }
 }
+
+var testFactory = React.createFactory(ProgressBar);
 
 export = ProgressBar;
