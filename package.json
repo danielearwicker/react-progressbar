@@ -1,6 +1,6 @@
 {
   "name": "dre-react-progressbar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "built/index.js",
   "dependencies": {
@@ -8,7 +8,7 @@
     "typed-react": "^3.3.1"
   },
   "scripts": {
-    "prepublish": "tsc -outDir built index.ts typings/react/react.d.ts typings/typed-react/typed-react.d.ts"
+    "prepublish": "tsc --module commonjs --outDir built index.ts typings/react/react.d.ts typings/typed-react/typed-react.d.ts typings/dre-react-progressbar/dre-react-progressbar.d.ts"
   },
   "author": "Daniel Earwicker <dan@earwicker.com>",
   "license": "ISC"

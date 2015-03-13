@@ -1,10 +1,7 @@
 import React = require("react");
 import TypedReact = require("typed-react");
 
-interface ProgressBarProps {
-    complete: number; // between 0 and 1
-    easing?: (x: number) => number;
-}
+import ProgressBarProps = DRE.ReactProgressBarProps;
 
 interface ProgressBarState {
     started?: number;
@@ -88,6 +85,5 @@ class ProgressBar extends TypedReact.Component<ProgressBarProps, ProgressBarStat
     }
 }
 
-var progressBarClass = TypedReact.createClass(ProgressBar);
-
-export = progressBarClass;
+export var reactClass = TypedReact.createClass(ProgressBar);
+export var factory = React.createFactory(reactClass);

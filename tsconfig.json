@@ -14,7 +14,9 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
-        "./progressBar.ts",
+        "./index.ts",
+        "./typings/dre-react-progressbar/dre-react-progressbar-props.d.ts",
+        "./typings/dre-react-progressbar/dre-react-progressbar.d.ts",
         "./typings/react/react.d.ts",
         "./typings/typed-react/typed-react.d.ts"
     ]
