@@ -1,0 +1,21 @@
+{
+    "version": "1.4.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noLib": false,
+        "outDir": "built"
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./progressBar.ts",
+        "./typings/react/react.d.ts",
+        "./typings/typed-react/typed-react.d.ts"
+    ]
+}

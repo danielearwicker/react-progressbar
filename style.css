@@ -1,0 +1,11 @@
+.progress {
+    height: 20px;
+    border: 1px solid #bbb;
+    position: relative;
+    margin: 6px;
+}
+
+.progress .bar {
+    background: #ddd;
+    border-right: 1px solid #bbb;
+}
