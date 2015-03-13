@@ -53,7 +53,7 @@ class ProgressBar extends React.Component<ProgressBarProps, ProgressBarState> {
                 to: this.state.to,
                 interpolated: this.state.from +
                     (easing(elapsed) * (this.state.to - this.state.from))
-            }, () => requestAnimationFrame(() => this.animate));
+            }, () => requestAnimationFrame(() => this.animate()));
         }
     }
 
