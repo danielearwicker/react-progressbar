@@ -4,11 +4,10 @@
   "description": "",
   "main": "built/index.js",
   "dependencies": {
-    "react": "^0.12.2",
-    "typed-react": "^3.3.1"
+    "react": "^0.13.0"
   },
   "scripts": {
-    "prepublish": "tsc --module commonjs --outDir built index.ts typings/react/react.d.ts typings/typed-react/typed-react.d.ts typings/dre-react-progressbar/dre-react-progressbar.d.ts"
+    "prepublish": "tsc --module commonjs --outDir built index.ts typings/react/react.d.ts typings/dre-react-progressbar/dre-react-progressbar.d.ts"
   },
   "author": "Daniel Earwicker <dan@earwicker.com>",
   "license": "ISC"

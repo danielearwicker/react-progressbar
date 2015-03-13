@@ -1,5 +1,4 @@
 import React = require("react");
-import TypedReact = require("typed-react");
 
 import ProgressBarProps = DRE.ReactProgressBarProps;
 
@@ -18,7 +17,7 @@ function easeInOutQuad(t: number) {
 
 var div = React.DOM.div;
 
-class ProgressBar extends TypedReact.Component<ProgressBarProps, ProgressBarState> {
+class ProgressBar extends React.Component<ProgressBarProps, ProgressBarState> {
 
     getInitialState(): ProgressBarState {
         return {
@@ -85,5 +84,4 @@ class ProgressBar extends TypedReact.Component<ProgressBarProps, ProgressBarStat
     }
 }
 
-var cls = TypedReact.createClass(ProgressBar);
-export = cls;
+export = ProgressBar;
